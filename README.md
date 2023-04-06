@@ -1,4 +1,4 @@
-# CS5293SP23-Project0
+# CS5293SP23-Project1
 
 The main aim of this project is to use Python and Text Analytics concepts to redact sensitive data such as names, gender, dates, mobile numbers, and postal addresses by building a system that takes the text documents as input and then detects and redacts the sensitive entities. This makes sure that the data in the output file(with .redacted extension) has no confidential data. 
 #Used Packages:
