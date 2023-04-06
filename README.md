@@ -29,20 +29,20 @@ pipenv run python -m pytest
 ##redacted_names(data):
 In order to store the detected names, the function first constructs an empty list s. Then, it imports the spacy English language model using en_core_web_sm and uses it to extract named entities from the incoming string data.
 The replace function is used to replace each instance of a named entity in the input string data with an asterisk of the same length for each named entity that is recognized as a person (i.e., possessing the label "PERSON"). Redaction is done by multiplying the string "redact" by the length of the string for the recognized entity. The function calls another function stats to count the number of identified names in the s list after processing all named entities. After that, the updated string data is returned.
-##redacted_dates(data):
+## Redacted_dates(data):
 The redacted dates function accepts a string of data as input, and then extracts all of the dates from the text using a regular expression from the commonregex library. It then substitutes a redacted value for each extracted date.
 The function calls a stats function after all the dates have been redacted in order to capture some statistics regarding the redaction procedure. The stats function is used in this instance to keep track of how many dates were censored. The function then returns the redacted string data as output.
-##redacted_phones(data):
+## Redacted_phones(data):
 A string of data is passed into the redacted_phones function, and all of the phone numbers are extracted using a regular expression from the commonregex package. Then, a redacted value is used to replace each extracted phone number. Finally, the redacted string data is returned as output from the function.
-##redacted_genders(data):
+## Redacted_genders(data):
 Using a regular expression, the redacted genders function takes a string of data as input and extracts words that frequently refer to gender-specific pronouns, titles, or familial relationships. It specifically searches for the phrases "He", "She", "His", "Her", "mother", "brother", "sister", "son", "daughter", "uncle", "aunt", "nephew", "niece", "male", "female", "actor", "actress", "boy", "girl", "man", "woman", "Mr.", and "Ms.". Following their extraction, the function substitutes each of these words with a redacted value. Then the stats function is called an Finally, the redacted string data is returned as output from the function.
-##redact_address_data(data):
+## redact_address_data(data):
 The spaCy library is used by the redact address data function to extract all geographical entities (GPE) from a string of data that is provided as input. GPE stands for geopolitical entities, which include states, cities, and nations.
 The function substitutes a redacted value for each GPE entity it discovers (the value of the redact variable is not shown in the code provided). A string of asterisks (*) with the same length as the original value serves as the redacted value. Then the stats function is called to record the statistics and finally, the redacted string data is returned as output from the function.
 ##stats(name, written data):
 The script iterates through each input file, reading each one and determining whether or not it is empty. If the file is not empty, it writes the file name to the statistics file and, using the command-line options, applies several redaction functions to the file's contents. The script reads the contents of the statistics file when redaction is finished and saves them in a variable named "filecount." Then it generates a new output file with the name of the input file and the extension ".redacted".
 
-#TEST FUNCTIONS:
+# TEST FUNCTIONS:
 ##def test_redacted_names():
 This test case checks if the redacted_names() function correctly replaces the name in the input string with black boxes, thereby protecting the privacy of the person whose name is mentioned. If the test passes, it indicates that the function is working correctly for this specific input case.
 ##def test_redacted_dates():
