@@ -49,11 +49,11 @@ This test case checks if the redacted_names() function correctly replaces the na
 The test function generates a sample text string with a date and an anticipated output string that preserves the time but redacts the date using black boxes (). The redacted dates() function's output is compared to the expected output string using the assert statement in the test function. The test will fail if the function's output differs from what was anticipated.
 ##def test_redacted_genders():
 This test case checks if the redacted_genders() function correctly replaces gender pronouns in the input string with block characters. If the test passes, it indicates that the function is working correctly for this specific input case.
-##def test_redact_address_data():
+## Def test_redact_address_data():
 The address is covered up by full block characters in the expected output string and the sample text string produced by the test function. The assert statement in the test function compares the output of the redact address data() method to the expected output string. If the function's output deviates from what was expected, the test will fail.
-##TestRedaction(unittest.TestCase):
+## TestRedaction(unittest.TestCase):
 This code defines a unit test class called TestRedaction that inherits from the unittest.TestCase class.Within the TestRedaction class, there is a single test function called test_stats() that tests a function that is not specified in this code snippet. Overall, this code provides a skeleton for creating a unit test class and test functions for a specific function that needs to be tested.
-#Format of the stats output file:
+# Format of the stats output file:
 The output file of the stats function gives the number of each redacted entities. The    format of the output file is as follows :
 Redacted names =
 Redacted dates =
@@ -62,7 +62,7 @@ Redacted phones =
 Redacted addresses =
 
 
-#Bugs and Assumptions :
+# Bugs and Assumptions :
 The redacted_names() function uses spacy's named entity recognition (NER) to identify names in the input data. However, NER is not perfect and may miss or incorrectly identify names.
 The stats() function assumes that the stats file has already been created and can be appended to. If the stats file does not exist, this function will not work properly.
 The code assumes that the input files are readable and non-empty. If an input file is not readable or empty, this may cause errors in reading the data. And it also assumes that the output directory exists and is writable. If the output directory does not exist or is not writable, the code will not be able to write the redacted data to the output file.
