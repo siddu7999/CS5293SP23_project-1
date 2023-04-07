@@ -1,0 +1,2 @@
+Stackoverflow | https://stackoverflow.com/| - Used for fixing regular expressions
+https://realpython.com/nltk-nlp-python/ - Used for nltk installation commands
