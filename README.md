@@ -7,13 +7,21 @@
 The main aim of this project is to use Python and Text Analytics concepts to redact sensitive data such as names, gender, dates, mobile numbers, and postal addresses by building a system that takes the text documents as input and then detects and redacts the sensitive entities. This makes sure that the data in the output file(with .redacted extension) has no confidential data. 
 ## Used Packages:
 sys (import sys)
+
 commonregex (import commonregex)
+
 spacy (import spacy)
+
 nltk
+
 pyap (import pyap)
+
 re (import re)
+
 os (import os)
+
 glob (import glob)
+
 ## How to install:
 To create a new directory and open that directory : "mkdir my_project" and "cd my_project"
 To get the project into instance from github : git clone "link to the repository"
