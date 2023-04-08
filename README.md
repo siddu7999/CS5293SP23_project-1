@@ -15,6 +15,9 @@ re (import re)
 os (import os)
 glob (import glob)
 #How to install:
+To create a new directory and open that directory : "mkdir my_project" and "cd my_project"
+To get the project into instance from github : git clone "link to the repository"
+pipenv shell
 pipenv install nltk (To install the Natural Language Toolkit (NLTK) package within a pipenv virtual environment.)
 sudo apt install python3-nltk
 pipenv install commonregex (used to install the CommonRegex package within a pipenv virtual environment).
