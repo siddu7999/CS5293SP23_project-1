@@ -79,11 +79,18 @@ The address is covered up by full block characters in the expected output string
 ### testRedaction(unittest.TestCase):
 This code defines a unit test class called TestRedaction that inherits from the unittest.TestCase class.Within the TestRedaction class, there is a single test function called test_stats() that tests a function that is not specified in this code snippet. Overall, this code provides a skeleton for creating a unit test class and test functions for a specific function that needs to be tested.
 ### Format of the stats output file:
-The output file of the stats function gives the number of each redacted entities. The    format of the output file is as follows :
+
+The output file of the stats function gives the number of each redacted entities. 
+The format of the output file is as follows :
+
 Redacted names =
+
 Redacted dates =
+
 Redacted genders =
+
 Redacted phones =
+
 Redacted addresses =
 
 
