@@ -23,19 +23,33 @@ os (import os)
 glob (import glob)
 
 ## How to install:
+
 To create a new directory and open that directory : "mkdir my_project" and "cd my_project"
+
 To get the project into instance from github : git clone "link to the repository"
+
 pipenv shell
+
 pipenv install nltk (To install the Natural Language Toolkit (NLTK) package within a pipenv virtual environment.)
+
 sudo apt install python3-nltk
+
 pipenv install commonregex (used to install the CommonRegex package within a pipenv virtual environment).
+
 pipenv install spacy (used to install the spacy package within a pipenv virtual environment.)
+
 python -m spacy download en_core_web_sm (used to download a pre-trained English language model for spacy).
+
 ## How to run:
+
 The following command is used to run the redactor code:
+
 pipenv run python redactor.py --input '*.txt' --names --dates --phones --genders --address --output 'project1/files/' --stats stderr
+
 The following command is used to run the test codes:
+
 pipenv run python -m pytest
+
 # Functions:
 ### redacted_names(data):
 In order to store the detected names, the function first constructs an empty list s. Then, it imports the spacy English language model using en_core_web_sm and uses it to extract named entities from the incoming string data.
